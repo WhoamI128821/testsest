@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% load humanize%}
+
+{% block main %}
+<h1>{% now "Y/m/d/ H:i" %}</h1>
+
+<h2>Achievements</h2>
+<p>I'm virgin for {{ sincebirth }}</p>
+<h2>Skills</h2>
+<ul>
+    {% for talent in evilthings %}
+    <li>{{ talent }}</li>
+    {% empty %}
+    <li>No achievements</li>
+    {% endfor %}
+</ul>
+{% endblock %}

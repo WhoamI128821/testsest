@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+{% if username == "hatecrap2021" %}
+<h1>YOU MOTHER FUCKING PIECE OF SHIT!!!</h1>
+{% elif username %}
+<h1>Hey, Mr.{{ username }}. Welcome!</h1>
+{% else %}
+<h1>Who da fuk r u?</h1>
+{% endif %}
+<h2>Hey {{ sincebirth }}</h2>
+<img src="{% static 'banbang.png' %}" alt="" />
+{% endblock %}

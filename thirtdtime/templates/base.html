@@ -1,0 +1,17 @@
+{% load static %}
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+        
+    </head>
+    <body>
+        {% include "_navbar.html" %}
+        
+        {% block main %}
+        No content here you fucking retarded
+        {% endblock %}
+        
+        {% include "_footer.html" %}
+    </body>
+</html>
